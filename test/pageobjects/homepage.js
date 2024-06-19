@@ -6,6 +6,7 @@ class HomePage {
     get testLOGOUT() { return $('~test-LOGOUT')}
     get testCartbtn() { return $('~test-Cart')}
 
+    get itemGroup0() { return $('(//android.view.ViewGroup[@content-desc="test-Item"])')}
     get itemGroup1() { return $('(//android.view.ViewGroup[@content-desc="test-Item"])[1]')}
     get itemGroup2() { return $('(//android.view.ViewGroup[@content-desc="test-Item"])[2]')}
     get itemGroup3() { return $('(//android.view.ViewGroup[@content-desc="test-Item"])[3]')}
@@ -32,6 +33,7 @@ class HomePage {
 
     async itemGroupclick(grouplist) {
         let itemGrouplist = [
+            this.itemGroup0,
             this.itemGroup1,
             this.itemGroup2,
             this.itemGroup3,
